@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=leftOperand\ op\ rightOperand
+comment0.target=BinaryExpression(Expression,\ SymbolTypes,\ Expression)
+comment1.target=void\ prettyInfix()
+comment2.target=void\ prettyPostfix()
+comment3.target=void\ prettyPrefix()
+comment4.target=int\ getValue()
+comment5.params=x\ n
+comment5.target=int\ pow(int,\ int)
+numComments=6

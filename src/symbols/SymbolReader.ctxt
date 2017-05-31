@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=inStream
+comment0.target=SymbolReader(Reader)
+comment0.text=\nConstructor.\n@param\ inStream\ the\ stream\ containing\ a\ program.\n\n
+comment1.target=Symbol\ readNextSymbol()
+comment2.target=int\ getInt()
+comment2.text=\nReturn\ an\ integer\ read\ from\ the\ input\ stream\nPrecondition\:\ First\ digit\ is\ already\ read\ into\ ch\n\n
+comment3.target=boolean\ nextChar()
+comment3.text=\nnextChar\ sets\ ch\ based\ on\ the\ next\ character\ in\ the\ input\ stream.\nputBackChar\ puts\ the\ character\ back\ onto\ the\ stream.\nIt\ should\ only\ be\ used\ once\ after\ a\ nextChar.\nBoth\ routines\ adjust\ currentLine\ if\ necessary.\n\n
+comment4.target=void\ putBackChar()
+numComments=5

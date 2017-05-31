@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.params=inStream
+comment0.target=Parser(Reader)
+comment1.target=Expression\ parse()
+comment2.params=s
+comment2.target=Expression\ parseExpression(Symbol)
+comment3.params=leftOperand\ operator
+comment3.target=Expression\ parseBinaryExpression(Expression,\ Symbol)
+numComments=4
