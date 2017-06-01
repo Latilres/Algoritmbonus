@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=SymbolTypes()
+comment1.params=opChar
+comment1.target=SymbolTypes(char)
+comment2.params=x
+comment2.target=boolean\ isBinary(SymbolTypes)
+numComments=3

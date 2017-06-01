@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=type\ value
+comment0.target=Symbol(SymbolTypes,\ int)
+comment1.params=type
+comment1.target=Symbol(SymbolTypes)
+comment2.target=SymbolTypes\ getType()
+comment3.target=int\ getValue()
+numComments=4
