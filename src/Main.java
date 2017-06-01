@@ -18,15 +18,26 @@ public class Main {
                           new ConstantExpression( 4 ),
                           SymbolTypes.MULT,
                           new ConstantExpression( 5 ) ) );
-         
-        // B.1                  
-//         testExpr.prettyInfix();         System.out.println(); 
-//         testExpr.prettyPostfix();       System.out.println(); 
-//         testExpr.prettyPrefix();        System.out.println(); 
+        // B.1
+         testExpr.prettyInfix();         System.out.println();
+         testExpr.prettyPostfix();       System.out.println();
+         testExpr.prettyPrefix();        System.out.println("/n");
         // B.2
-//         System.out.println(testExpr.getValue());
+         System.out.println(testExpr.getValue());
          
         // B.3
-        // ...
+        Parser parse = new Parser(new InputStreamReader(System.in));
+        try {
+            Expression myExpression = parse.parse();
+            System.out.print("Infix: ");
+            myExpression.prettyInfix();
+            System.out.print("\nPrefix: ");
+            myExpression.prettyPrefix();
+            System.out.print("\nPostfix: ");
+            myExpression.prettyPostfix();
+            System.out.println("\n- These expressions equals: " + myExpression.getValue());
+        } catch (SyntaxError e){
+            e.printStackTrace();
+        }
     }
 }

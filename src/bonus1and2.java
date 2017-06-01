@@ -1,3 +1,10 @@
+/**
+ * Parse simple binary expressions with parantheses
+ *
+ * @author LET375-39
+ * @version 2017-06-01
+ */
+
 public class bonus1and2{
   // parameters
   // amount the amount to be changed
