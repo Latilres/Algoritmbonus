@@ -1,3 +1,10 @@
+/**
+ * Returns int values with suitable padding
+ *
+ * @author LET375-39
+ * @version 2017-06-01
+ */
+
 public class ConstantExpression implements Expression {
     private int value;
     public ConstantExpression( int value) {

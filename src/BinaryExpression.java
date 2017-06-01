@@ -1,5 +1,12 @@
 import symbols.*;
 
+/**
+ * Prints different arithmetic expressions from given input
+ *
+ * @author LET375-39
+ * @version 2017-06-01
+ */
+
 public class BinaryExpression implements Expression {
     private SymbolTypes op;
     private Expression leftOperand;
@@ -11,6 +18,7 @@ public class BinaryExpression implements Expression {
         this.rightOperand = rightOperand;
     }
 
+    // Checks the operator and reacts accordingly
     @Override
     public int getValue() {
         switch (op) {

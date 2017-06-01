@@ -1,6 +1,13 @@
 import java.io.*;
 import symbols.*;
 
+/**
+ * Parse simple binary expressions with parantheses
+ *
+ * @author LET375-39
+ * @version 2017-06-01
+ */
+
 public class Main {
 
     public static void main(String[] args) {

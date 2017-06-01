@@ -1,5 +1,6 @@
 /**
- * Parse simple binary expressions with parantheses
+ * Count the number of ways it is possible to return change.
+ * Print all permutations of a string.
  *
  * @author LET375-39
  * @version 2017-06-01
@@ -16,7 +17,7 @@ public class bonus1and2{
     if (amount < val[0] || n <= 0) {
       return 0;
     }
-    // Have we reached the smallest allowed number? (have we succeded)
+    // Have we reached the smallest allowed number? (have we succeeded)
     else if (amount == val[0]) {
       return 1;
     }
@@ -25,10 +26,12 @@ public class bonus1and2{
       return change(amount, val, n-1) + change(amount - val[n-1], val, n);
   }
 
+  // The inital input that prepares for the recursive version
   public static void permutations(String str){
     permutations("", str, str.length());
   }
 
+  // The recursive version that prints all permutations of a given string
   private static void permutations(String prefix, String str, int n){
     // Print if there are no more letters to add to prefix
     if (n <= 0)

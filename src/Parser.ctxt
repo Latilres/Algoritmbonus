@@ -1,9 +1,9 @@
 #BlueJ class context
 comment0.params=inStream
-comment0.target=Parser(Reader)
+comment0.target=Parser(java.io.Reader)
+comment1.params=
 comment1.target=Expression\ parse()
-comment2.params=s
-comment2.target=Expression\ parseExpression(Symbol)
-comment3.params=leftOperand\ operator
-comment3.target=Expression\ parseBinaryExpression(Expression,\ Symbol)
-numComments=4
+comment2.params=nextSymbol
+comment2.target=Expression\ parseExpression(symbols.Symbol)
+comment2.text=\r\n\ Gets\ symbols\ from\ user\ input\ and\ builds\ a\ syntax\ three\ from\ it.\r\n\ @param\ nextSymbol\ the\ symbols\ to\ parse\r\n\ @return\ an\ expression\ or\ the\ value\ of\ nextSymbol\r\n\ @throws\ SyntaxError\ when\ nextSymbol\ contains\ an\ unexpected\ value\r\n
+numComments=3

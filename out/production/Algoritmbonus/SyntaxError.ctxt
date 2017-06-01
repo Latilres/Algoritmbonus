@@ -1,4 +1,4 @@
 #BlueJ class context
 comment0.params=msg
-comment0.target=SyntaxError(String)
+comment0.target=SyntaxError(java.lang.String)
 numComments=1

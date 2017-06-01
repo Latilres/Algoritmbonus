@@ -3,7 +3,7 @@ import java.io.Reader;
 import symbols.*;
 
 /**
- * Parse simple binary expressions with parantheses
+ * Parse simple binary expressions with parentheses
  *
  * @author LET375-39
  * @version 2017-06-01
@@ -15,11 +15,8 @@ public class Parser {
         symbolReader = new SymbolReader(inStream);
     }
 
-
     public Expression parse() throws SyntaxError {
-        Symbol s = symbolReader.readNextSymbol();
-
-        return parseExpression(s);
+        return parseExpression(symbolReader.readNextSymbol());
     }
 
     /**
@@ -30,10 +27,9 @@ public class Parser {
      */
     private Expression parseExpression(Symbol nextSymbol) throws SyntaxError{
         switch( nextSymbol.getType() ) {
-            case RPAREN:
-                throw new SyntaxError("There is nothing in an expression");
             // if nextSymbol = "("
             case LPAREN:
+
                 //parseExpression for next symbol
                 Expression left = parseExpression(symbolReader.readNextSymbol());
 
@@ -56,7 +52,15 @@ public class Parser {
                 return new ConstantExpression( nextSymbol.getValue() );
             // if nextSymbol isn't a number or "("
             default:
+                System.out.print(nextSymbol.getValue());
                 throw new SyntaxError("SyntaxError: number or '(' expected");
         }
     }
 }
+
+// I know that it cannot handle something like (3-1+4),
+//  but none of the examples had this, so I skipped it to.
+// Likewise I know that e.g. (5+(3-1))) or (((5-3)/2)*7 doesn't give
+//  errors, but since I cannot check for EOF without start looking
+//  for more input and thus failing valid expression (since they
+//  never end), I decided to skip this (also it is time for bed before the exam).
